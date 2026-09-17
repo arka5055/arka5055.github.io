@@ -1,4 +1,4 @@
-const CACHE = 'skyline-signal-v5';
+const CACHE = 'skyline-signal-1789678521920';
 const APP_SHELL = [
   '/', '/manifest.json',
   '/scenery/airport.jpg', '/scenery/crosswind-coast.jpg', '/scenery/peak-rush-hour.jpg', '/scenery/superstorm-radar.jpg',
