@@ -13,6 +13,20 @@
 </head>
 <body>
   <p>Arcade moved to <a href="https://amber-brick-glow-nova.grok.me/">amber-brick-glow-nova.grok.me</a>.</p>
-  <script>location.replace("https://amber-brick-glow-nova.grok.me/");</script>
+  <script>
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.getRegistrations().then(function (regs) {
+    return Promise.all(regs.map(function (reg) { return reg.unregister(); }));
+  }).then(function () {
+    if (window.caches) return caches.keys().then(function (keys) {
+      return Promise.all(keys.map(function (name) { return caches.delete(name); }));
+    });
+  }).finally(function () {
+    location.replace("https://amber-brick-glow-nova.grok.me/");
+  });
+} else {
+  location.replace("https://amber-brick-glow-nova.grok.me/");
+}
+</script>
 </body>
 </html>
