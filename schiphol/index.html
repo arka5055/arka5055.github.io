@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+  <meta name="theme-color" content="#111213" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Real Time</title>
+  <style>
+    html,body{margin:0;width:100%;height:100%;background:#111213;overflow:hidden;touch-action:none}
+    canvas{position:fixed;inset:0;width:100%;height:100%}
+    video{position:fixed;width:0;height:0;opacity:0}
+  </style>
+</head>
+<body>
+  <video id="holdVid" muted playsinline loop></video>
+  <video id="wipeVid" muted playsinline></video>
+  <video id="paintVid" muted playsinline></video>
+  <canvas id="clock"></canvas>
+  <script src="./app.js"></script>
+</body>
+</html>
