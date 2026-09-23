@@ -1,0 +1,19 @@
+{
+  "name": "Living Line",
+  "short_name": "Living Line",
+  "description": "A painted analog clock. Hands are wiped and rolled each minute.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#040506",
+  "theme_color": "#040506",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
